@@ -1,4 +1,4 @@
 import './bootstrap';
 import 'bootstrap';
-import './aos.js'
-import './gsap.min.js'
+import './main.js';
+import 'aos/dist/aos.js';

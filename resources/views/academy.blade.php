@@ -1,5 +1,6 @@
 <x-layout>
     <div class="bg-academy">
+        <!-- header -->
         <div class="container pt-5">
             <div class="row pt-5">
                 <div class="col-12 pt-5 " data-aos="fade-up-right">
@@ -18,16 +19,17 @@
             </div>
         </div>
 
+        <!-- card classes generate dinamicamente -->
         <div class="container pt-5">
             <div class="col-12">
                 <div class="row">
                     @foreach ($teachers as $teacher)
                     <div class="col-12 col-md-6">
                         <div class="card mb-5 border-0" data-aos="{{$loop->first ? 'zoom-in' : 'zoom-in-up'}}">
-                            <h6 class="card-header"><i class="fa-solid fa-heart"></i> Corso {{ $teacher['id'] }}</h6>
+                            <h6 class="card-header"><i class="fa-solid fa-heart"></i> Class {{ $teacher['id'] }}</h6>
                             <div class="card-body">
                                 <h5 class="card-title fs-1">{{ $teacher['subject'] }}</h5>
-                                <p class="card-text fs-5">{{ $teacher['description'] }}</p>
+                                <p class="card-text fs-5">{{ $teacher['class-desc'] }}</p>
                                 <a href="{{ route('academy.show', $teacher['id']) }}" class="btn btn-dark fs-5">Dettagli</a>
                             </div>
                         </div>
@@ -37,7 +39,56 @@
             </div>
         </div>
 
+        <!-- teachers -->
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-12 pt-5 " data-aos="fade-up-right">
+                    <h5>Our Specialist <img src="/media/a1.png" width="70"></h5>
+                </div>
+                <div class="col-12 col-md-3 pb-5" data-aos="flip-left">
+                    <div class="card profile-card-1">
+                        <img src="/media/tec1.png" alt="profile-image" class="profile" />
+                        <div class="card-content">
+                            <h2>Sophia Smith<small>Make-up Artist</small></h3>
+                                <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
+                                </div>
+                        </div>
+                    </div>
 
+                </div>
+
+                <div class="col-12 col-md-3 pb-5" data-aos="flip-right">
+                    <div class="card profile-card-1">
+                        <img src="/media/tec2.png" alt="profile-image" class="profile" />
+                        <div class="card-content">
+                            <h2>Olivia Johnson<small>Skin Care Specialist</small></h3>
+                                <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 pb-5" data-aos="flip-left">
+                    <div class="card profile-card-1">
+                        <img src="/media/tec3.png" alt="profile-image" class="profile" />
+                        <div class="card-content">
+                            <h2>Emma Williams<small>Onicothecnician</small></h3>
+                                <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 pb-5" data-aos="flip-right">
+                    <div class="card profile-card-1">
+                        <img src="/media/tec4.png" alt="profile-image" class="profile" />
+                        <div class="card-content">
+                            <h2>Ava Brown<small>Hairdresser</small></h3>
+                                <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-
 </x-layout>

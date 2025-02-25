@@ -72,46 +72,61 @@ class FrontController extends Controller
             'id' => 1,
             'name' => 'Sophia',
             'surname' => 'Smith',
-            'age' => 30,
             'subject' => 'Makeup Artistry',
-            'description' => 'Learn the art of makeup application for various occasions.',
+            'class-desc' => 'Learn the art of makeup application for various occasions.',
+            'description' => 'This comprehensive course covers professional makeup techniques, including foundation application, contouring, eye makeup, and bridal styling. Students will learn color theory, product selection, and how to adapt makeup for different skin tones and face shapes. Hands-on practice with professional tools will ensure mastery of each technique. ',
+            'program' => 'This course provides a complete overview of professional makeup techniques, covering fundamental and advanced skills. Students will start with the basics of skincare and makeup application before progressing to more specialized techniques. The curriculum includes foundation and concealer application, contouring and highlighting, and a variety of eye makeup styles, including smokey eyes and cut crease. Additionally, students will learn about bridal and evening makeup applications, as well as an introduction to special effects and theatrical makeup.',
+            'qualification' => 'Upon successful completion, students will receive the Sanctuary Spa Makeup Artistry Certification, which certifies their expertise in professional makeup application. They will also gain practical experience working with industry-standard products, preparing them for careers in beauty, fashion, and entertainment.',
+            'method' => 'The course follows a blended learning approach that combines theoretical lessons with live demonstrations and hands-on practice. Students will work on real models, allowing them to refine their techniques with direct guidance from instructors. ',
             'schedule' => 'Monday and Wednesday, 10 AM - 12 PM',
-            'supplies' => 'Makeup kit, Brushes, Wipes'
+            'supplies' => 'Makeup kit, Brushes, Wipes',
+            'image' => '/media/1m.png'
         ],
         [
             'id' => 2,
             'name' => 'Olivia',
             'surname' => 'Johnson',
-            'age' => 28,
             'subject' => 'Skincare',
-            'description' => 'Understand skincare routines and treatments.',
+            'class-desc' => 'Understand skincare routines and treatments.',
+            'description' => 'This course provides in-depth knowledge of skincare routines, facial treatments, and dermatological conditions. Students will learn how to identify different skin types, recommend treatments, and perform deep cleansing techniques. The course also includes training on product ingredients and their effects on the skin.',
+            'program' => 'This course covers the essentials of skincare, from understanding different skin types to advanced treatment techniques. Students will learn about skin anatomy, facial cleansing, exfoliation, hydration, and anti-aging treatments. Additional topics include skincare for acne-prone and sensitive skin, as well as professional consultation techniques for personalized treatment plans.',
+            'qualification' => 'Graduates will earn the Sanctuary Spa Skincare Specialist Certificate, which certifies their knowledge of professional skincare treatments and product applications. This qualification prepares students for careers in high-end spas, skincare clinics, and dermatology centers.',
+            'method' => 'Students will engage in a combination of theoretical instruction, case study analysis, and hands-on practice. They will have the opportunity to apply treatments in real-life scenarios and simulate client consultations under expert supervision. ',
             'schedule' => 'Tuesday and Thursday, 1 PM - 3 PM',
-            'supplies' => 'Skincare products, Towels, Masks'
+            'supplies' => 'Skincare products, Towels, Masks',
+            'image' => '/media/3m.png'
         ],
         [
             'id' => 3,
             'name' => 'Emma',
             'surname' => 'Williams',
-            'age' => 35,
             'subject' => 'Nail Technology',
-            'description' => 'Master nail art and techniques with all new gen products.',
+            'class-desc' => 'Master nail art and techniques with all new gen products.',
+            'description' => 'This course is designed to teach students the fundamentals of nail care, from manicures and pedicures to advanced nail art techniques. The course includes gel and acrylic nail applications, as well as nail health and safety regulations.',
+            'program' => 'This course is designed to provide students with both foundational and advanced skills in nail care. The curriculum includes nail anatomy, hygiene and safety regulations, classic manicure and pedicure techniques, and advanced gel and acrylic nail applications. Students will also explore modern nail art designs and creative embellishments.',
+            'qualification' => 'Upon completion, students will receive the Sanctuary Spa Nail Technician Certification, which validates their ability to perform professional nail treatments and artistic nail designs. This qualification is ideal for those looking to work in salons, spas, or as freelance nail artists.',
+            'method' => 'Students will benefit from a hands-on learning experience that includes live demonstrations, real-model practice, and creative workshops dedicated to nail art. Expert instructors will provide personalized feedback to help students perfect their techniques',
             'schedule' => 'Friday, 10 AM - 2 PM',
-            'supplies' => 'Nail polish, Tools, Nail art supplies'
+            'supplies' => 'Nail polish, Tools, Nail art supplies',
+            'image' => '/media/2m.png'
         ],
         [
             'id' => 4,
             'name' => 'Ava',
             'surname' => 'Brown',
-            'age' => 26,
             'subject' => 'Hair Styling',
-            'description' => 'Learn various hair styling techniques.',
+            'class-desc' => 'Learn various hair styling techniques.',
+            'description' => 'This course focuses on hairstyling techniques, from basic cuts to advanced styling methods. Students will work with various hair types and learn about color theory, styling tools, and salon management basics.',
+            'program' => 'This course focuses on professional hairstyling techniques, from basic cutting to advanced styling methods. Students will learn hair anatomy, precision cutting, coloring, and chemical treatments. The course also covers bridal and special occasion hairstyling, along with an introduction to salon management and customer relations.',
+            'qualification' => 'Graduates will obtain the Sanctuary Spa Hair Stylist Certification, demonstrating their expertise in professional hairstyling techniques. This certification prepares them for careers in salons, freelance styling, or even launching their own business.',
+            'method' => 'Students will receive a mix of theoretical instruction, live demonstrations, and practical training in a simulated salon environment. They will work on real clients to ensure they are fully prepared for real-world hairstyling challenges.',
             'schedule' => 'Saturday, 10 AM - 1 PM',
-            'supplies' => 'Hair products, Tools, Accessories'
+            'supplies' => 'Hair products, Tools, Accessories',
+            'image' => '/media/4m.png'
         ],
     ];
+
     
-
-
     public function home()
     {
         return view('home');
@@ -134,4 +149,6 @@ class FrontController extends Controller
         $teacher = collect($this->teachers)->firstWhere('id', $id);
         return view('teacher-show', ['teacher' => $teacher]);
     }
+
+
 }

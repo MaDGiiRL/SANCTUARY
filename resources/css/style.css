@@ -184,12 +184,16 @@ h2 {
     opacity: 1;
     box-shadow: 0 0 15px #979797;
 }
-.card h3, .card h5{
+
+.card h3,
+.card h5 {
     transition: all 3s ease;
     cursor: pointer;
 }
-.card h3:hover, .card h5:hover{
-   letter-spacing: 5px
+
+.card h3:hover,
+.card h5:hover {
+    letter-spacing: 5px
 }
 
 
@@ -223,18 +227,119 @@ h6 {
 }
 
 .card-header {
-    background-image: linear-gradient(to left, #4DFAFA, #F4B8EE);
+    background-image: url(/public/media/Light\ Gradient\ 06.png);
+    background-size: cover;
 
 }
 
-.card{
+.card {
     box-shadow: 0 0 8px #979797;
 }
 
+/*Teachers Card 1*/
+.profile-card-1 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    color: #3F3F3F;
+    text-align: center;
+    height: 368px;
+    border: none;
+    padding: 38px 10px;
+    background-image: url(/public/media/Light\ Gradient\ 06.png);
+    background-size: cover;
+}
+
+.profile-card-1 .background {
+    width: 100%;
+    vertical-align: top;
+    opacity: 0.9;
+    filter: blur(5px);
+    transform: scale(2.8);
+}
+
+.profile-card-1 .card-content {
+    width: 100%;
+    padding: 15px 25px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.profile-card-1 .profile {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    max-width: 150px;
+    opacity: 1;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid #3F3F3F;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    transition: all 2s;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.profile-card-1 .profile:hover {
+    opacity: 1;
+}
+
+.profile-card-1 h2 {
+    margin: 0 0 5px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.profile-card-1 h2 small {
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.profile-card-1 i {
+    display: inline-block;
+    font-size: 16px;
+    color: #3F3F3F;
+    text-align: center;
+    border: 1px solid #3F3F3F;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 2s;
+    opacity: 0.6;
+}
 
 
+.profile-card-1 .icon-block {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.profile-card-1 .icon-block a {
+    text-decoration: none;
+}
+
+.profile-card-1 i:hover {
+    background-image: linear-gradient(to left, #4DFAFA, #F4B8EE);
+    color: #2e3434;
+    text-decoration: none;
+    opacity: 1;
+}
 
 
+/**Card Classes**/
+.bg-pink{
+    background-image: url(/public/media/Light\ Gradient\ 06.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 8px #979797;
+}
 
 
 

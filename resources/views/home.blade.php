@@ -3,17 +3,17 @@
     <!-- Main Content with background gradient-->
     <main class="bg-index">
         <!-- Header Index -->
-        <div class="custom-content container-fluid pt-5">
+        <div class="container-fluid pt-5">
             <div class="row pt-5 ps-5">
-                <div class="col-12 text-start big-title pt-5">
+                <div class="col-12 text-start big-title pt-5" data-aos="fade-up">
                     <h1>
                         Sanctuary
                     </h1>
                 </div>
-                <div class="col-12 col-md-8 abstract-composition d-flex justify-content-end">
+                <div class="col-12 col-md-8 abstract-composition d-flex justify-content-end" data-aos="fade-down">
                     <img src="/media/abstract-composition-2.png" alt="abstract-composition-2" class="img-fluid">
                 </div>
-                <div class="col-12 col-md-3 text-end">
+                <div class="col-12 col-md-3 text-end" data-aos="fade-left">
                     <h1 class="big-title2 pb-5">
                         SPA
                     </h1>
