@@ -67,7 +67,12 @@ class FrontController extends Controller
     ];
 
 
-
+    public $teachers = [
+        ['id' => 1, 'name' => 'Sophia', 'surname' => 'Smith', 'age' => 30, 'subject' => 'Makeup Artistry'],
+        ['id' => 2, 'name' => 'Olivia', 'surname' => 'Johnson', 'age' => 28, 'subject' => 'Skincare'],
+        ['id' => 3, 'name' => 'Emma', 'surname' => 'Williams', 'age' => 35, 'subject' => 'Nail Technology'],
+        ['id' => 4, 'name' => 'Ava', 'surname' => 'Brown', 'age' => 26, 'subject' => 'Hair Styling'],
+    ];
 
 
     public function home()
@@ -80,4 +85,12 @@ class FrontController extends Controller
     {
         return view('services', ['services' => $this->services]);
     }
+
+
+    public function academy()
+    {
+        return view('academy', ['academy' => $this->teachers]);
+    }
+
+
 }
