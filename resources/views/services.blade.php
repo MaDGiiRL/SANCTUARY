@@ -29,6 +29,9 @@
         </div>
     </div>
 
+     <!-- form -->
+     <x-form />
+     
     <!-- footer -->
     <x-footer />
 

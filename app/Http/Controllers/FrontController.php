@@ -94,7 +94,7 @@ class FrontController extends Controller
             'surname' => 'Williams',
             'age' => 35,
             'subject' => 'Nail Technology',
-            'description' => 'Master nail art and techniques.',
+            'description' => 'Master nail art and techniques with all new gen products.',
             'schedule' => 'Friday, 10 AM - 2 PM',
             'supplies' => 'Nail polish, Tools, Nail art supplies'
         ],

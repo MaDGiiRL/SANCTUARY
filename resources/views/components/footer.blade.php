@@ -1,16 +1,16 @@
    <!-- footer -->
    <footer class="container-fluid bg-grey pt-5 mt-5 pb-5" data-aos="zoom-in">
-            <div class="row ps-5 pt-5 mt-5">
-                <div class="col-md-6 ps-5">
-                    <div class="row ps-5">
-                        <div class="col-md-6 ">
+            <div class="row  pt-5 ps-5 mt-5 align-items-center justify-content-center">
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="col-12 col-md-6 ">
                             <div class="logo-part">
                                 <img src="/media/logo.png" class="w-50 logo-footer">
                                 <p>Developed with ♡ by Sofia Vidotto</p>
 
                             </div>
                         </div>
-                        <div class="col-md-6 px-4">
+                        <div class="col-12 col-md-6 px-4">
                             <h6> About Company</h6>
                             <p>But horizontal lines can only be a full pixel high.</p>
                             <a href="#" class="btn-footer"> More Info </a><br>
@@ -18,12 +18,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-12 col-md-6 pt-5 pt-md-0">
                     <div class="row">
-                        <div class="col-md-6 px-4">
+                        <div class="col-12 col-md-6 px-4">
                             <h6> Help us</h6>
                             <div class="row ">
-                                <div class="col-md-6">
+                                <div class="col-6">
                                     <ul>
                                         <li> <a href="#"> Home</a> </li>
                                         <li> <a href="#"> About</a> </li>
@@ -33,7 +33,7 @@
                                         <li> <a href="#"> Contact</a> </li>
                                     </ul>
                                 </div>
-                                <div class="col-md-6 px-4">
+                                <div class="col-6 px-4">
                                     <ul>
                                         <li> <a href="#"> Cab Faciliy</a> </li>
                                         <li> <a href="#"> Fax</a> </li>
@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 ">
+                        <div class="col-12 col-md-6 order-first pt-5 pt-md-0">
                             <h6> Newsletter</h6>
                             <div class="social">
                                 <a href="#"><i class="fa-brands fa-facebook link-dark fs-3 pe-3"></i></a>
