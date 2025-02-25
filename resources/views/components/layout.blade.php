@@ -10,10 +10,8 @@
     <!-- FAVICON -->
     <link rel="shortcut icon" href="../../media/logo-ai.png" type="image/x-icon">
 
-    <!-- Fontawesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CDN Fontawesome -->
+    <script src="https://kit.fontawesome.com/e3f2c77b28.js" crossorigin="anonymous"></script>
 
     <!-- Poppins - Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +19,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
     <!-- CSS Custom -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -40,19 +35,8 @@
         {{$slot}}
     </div>
 
-
-
-
-    <!-- Script Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-
-    <!-- Script Fontawesome -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js"
-        integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+   <!-- footer -->
+   <x-footer />
 
 
     <!-- AOS JS -->
@@ -60,13 +44,7 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 
-
-    <!-- Script Mine Javascript-->
-    <script src="../js/main.js"></script>
-
-
     <script>
-        //form
         document.querySelector('form').addEventListener('submit', function(e) {
             let nome = document.getElementById('nome').value;
             let email = document.getElementById('email').value;

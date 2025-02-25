@@ -53,7 +53,7 @@ class FrontController extends Controller
         [
             "id" => 7,
             "name" => "Chemical Peel",
-            "description" => "A skin treatment that uses chemical solutions to exfoliate and improve the texture of the skin, reducing fine lines and blemishes.",
+            "description" => "Treatment that uses chemical solutions to exfoliate and improve the texture of the skin, reducing fine lines and blemishes.",
             "target" => "Those looking to address skin imperfections and signs of aging.",
             "image" => "/media/services/Chemical Peel.png",
         ],

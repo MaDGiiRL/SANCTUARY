@@ -184,6 +184,14 @@ h2 {
     opacity: 1;
     box-shadow: 0 0 15px #979797;
 }
+.card h3, .card h5{
+    transition: all 3s ease;
+    cursor: pointer;
+}
+.card h3:hover, .card h5:hover{
+   letter-spacing: 5px
+}
+
 
 /**Academy**/
 h5 {
