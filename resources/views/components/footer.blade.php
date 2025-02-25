@@ -1,6 +1,6 @@
    <!-- footer -->
-   <footer class="container-fluid bg-grey pt-5 mt-5 pb-5" data-aos="zoom-in">
-       <div class="row  pt-5 ps-5 mt-5 align-items-center justify-content-center">
+   <footer class="container bg-grey pt-5 mt-5 pb-5" data-aos="zoom-in">
+       <div class="row  pt-5 align-items-center justify-content-center">
            <div class="col-12 col-md-6">
                <div class="row">
                    <div class="col-12 col-md-6 ">
@@ -10,7 +10,7 @@
 
                        </div>
                    </div>
-                   <div class="col-12 col-md-6 px-4">
+                   <div class="col-12 col-md-6 ">
                        <h6> About Company</h6>
                        <p>But horizontal lines can only be a full pixel high.</p>
                        <a href="#" class="btn-footer"> More Info </a><br>
@@ -20,7 +20,7 @@
            </div>
            <div class="col-12 col-md-6 pt-5 pt-md-0">
                <div class="row">
-                   <div class="col-12 col-md-6 px-4">
+                   <div class="col-12 col-md-6 ">
                        <h6> Help us</h6>
                        <div class="row ">
                            <div class="col-6">
@@ -33,7 +33,7 @@
                                    <li> <a href="#"> Contact</a> </li>
                                </ul>
                            </div>
-                           <div class="col-6 px-4">
+                           <div class="col-6 ">
                                <ul>
                                    <li> <a href="#"> Cab Faciliy</a> </li>
                                    <li> <a href="#"> Fax</a> </li>

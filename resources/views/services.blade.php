@@ -16,7 +16,7 @@
 
                 <!-- card generate dinamicamente -->
                 @foreach($services as $service)
-                <div class="col-6 mb-5" data-aos="{{$loop->first ? 'zoom-out-up' : 'zoom-out-down'}}">
+                <div class="col-12 col-md-6 mb-5" data-aos="{{$loop->first ? 'zoom-out-up' : 'zoom-out-down'}}">
                     <!-- card componenets -->
                     <x-card
                         title="{{$service['name']}}"
@@ -29,7 +29,7 @@
         </div>
     </div>
 
-     <!-- form -->
-     <x-form />
+    <!-- form -->
+    <x-form />
 
 </x-layout>

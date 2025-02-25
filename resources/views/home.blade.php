@@ -13,7 +13,7 @@
                 <div class="col-12 col-md-8 abstract-composition d-flex justify-content-end" data-aos="fade-down">
                     <img src="/media/abstract-composition-2.png" alt="abstract-composition-2" class="img-fluid">
                 </div>
-                <div class="col-12 col-md-3 text-end" data-aos="fade-left">
+                <div class="col-12 col-md-3 text-end" data-aos="fade-down">
                     <h1 class="big-title2 pb-5">
                         SPA
                     </h1>
@@ -30,12 +30,12 @@
         <!-- Second Section -->
         <div class="container-fluid custom-content-2">
             <div class="row ps-5">
-                <div class="col-9 text-start big-title pt-5" data-aos="fade-right">
+                <div class="col-12 col-md-9 text-start big-title pt-5" data-aos="fade-up">
                     <h2> Every detail is designed to provide you Sanctuary</h2>
                     <h4 class="display-3">Sanctuary Spa—where beauty meets serenity.</h4>
                     <div class="row pt-5 mt-5">
-                        <div class="col-6 pt-5 pe-5">
-                            <p class="lead fs-4" data-aos="fade-right">Our team of skilled professionals offers a wide range of services
+                        <div class="col-12 col-md-6 pt-5 pe-5">
+                            <p class="lead fs-4" data-aos="fade-up">Our team of skilled professionals offers a wide range of services
                                 tailored to meet your
                                 unique needs, including rejuvenating facials, soothing massages, expert waxing, and
                                 luxurious body treatments. We also specialize in advanced skincare techniques and
@@ -46,7 +46,7 @@
                             </div>
                         </div>
 
-                        <div class="col-3 pt-5 ps-5" data-aos="fade-down">
+                        <div class="col-12 col-md-3 pt-5 ps-5" data-aos="fade-down">
                             <div class="card1 border-0" style="width: 18rem;">
                                 <div class="card-body">
                                     <img src="./media/Group 7.png" width="50">
@@ -55,7 +55,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 pt-5" data-aos="fade-up">
+                        <div class="col-12 col-md-3 pt-5 ps-5" data-aos="fade-up">
                             <div class="card1 border-0" style="width: 18rem;">
                                 <div class="card-body">
                                     <img src="./media/Group 7.png" width="50">
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 d-flex justify-content-end m-0 p-0" data-aos="fade-left">
+                <div class="col-6 col-md-3 d-flex justify-content-end m-0 p-0 d-md-block d-none" data-aos="fade-down">
                     <img src="./media/Light Gradient 7.png" alt="light">
                 </div>
 

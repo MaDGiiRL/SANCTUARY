@@ -35,11 +35,11 @@
         {{$slot}}
     </div>
 
-   <!-- footer -->
-   <x-footer />
+
+        <!-- footer -->
+        <x-footer />
 
 
- 
     <script src="/js/main.js"></script>
 
 
