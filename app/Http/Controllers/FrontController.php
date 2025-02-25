@@ -126,12 +126,12 @@ class FrontController extends Controller
 
     public function academy()
     {
-        return view('academy', ['academy' => $this->teachers]);
+        return view('academy', ['teachers' => $this->teachers]);
     }
 
     public function show($id)
     {
         $teacher = collect($this->teachers)->firstWhere('id', $id);
-        return view('teacher.show', ['teacher' => $teacher]);
+        return view('teacher-show', ['teacher' => $teacher]);
     }
 }
