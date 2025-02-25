@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card services-card">
     <img src="{{$image}}" class="card-img-top" alt="media-1">
     <div class="card-body">
         <h3 class="card-title">{{$title}}</h3>

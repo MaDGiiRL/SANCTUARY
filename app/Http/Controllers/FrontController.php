@@ -68,10 +68,56 @@ class FrontController extends Controller
 
 
     public $teachers = [
-        ['id' => 1, 'name' => 'Sophia', 'surname' => 'Smith', 'age' => 30, 'subject' => 'Makeup Artistry'],
-        ['id' => 2, 'name' => 'Olivia', 'surname' => 'Johnson', 'age' => 28, 'subject' => 'Skincare'],
-        ['id' => 3, 'name' => 'Emma', 'surname' => 'Williams', 'age' => 35, 'subject' => 'Nail Technology'],
-        ['id' => 4, 'name' => 'Ava', 'surname' => 'Brown', 'age' => 26, 'subject' => 'Hair Styling'],
+        [
+            'id' => 1,
+            'name' => 'Sophia',
+            'surname' => 'Smith',
+            'age' => 30,
+            'subject' => 'Makeup Artistry',
+            'description' => 'Learn advanced makeup techniques for various occasions and clients.',
+            'schedule' => 'Monday - Wednesday 10:00 - 12:00',
+            'requirements' => 'Brush set, basic color palette, various shades of foundation.'
+        ],
+        [
+            'id' => 2,
+            'name' => 'Olivia',
+            'surname' => 'Johnson',
+            'age' => 28,
+            'subject' => 'Skincare',
+            'description' => 'Deepen your knowledge of skincare and the best techniques for aesthetic treatments.',
+            'schedule' => 'Tuesday - Thursday 14:00 - 16:00',
+            'requirements' => 'Facial cleansers, moisturizers, masks, and cleansing tools.'
+        ],
+        [
+            'id' => 3,
+            'name' => 'Emma',
+            'surname' => 'Williams',
+            'age' => 35,
+            'subject' => 'Nail Technology',
+            'description' => 'Become an expert in nail reconstruction and professional nail art.',
+            'schedule' => 'Monday - Friday 16:00 - 18:00',
+            'requirements' => 'Nail files, UV gel, polishes, LED lamp, and decoration tools.'
+        ],
+        [
+            'id' => 4,
+            'name' => 'Ava',
+            'surname' => 'Brown',
+            'age' => 26,
+            'subject' => 'Hair Styling',
+            'description' => 'Gain skills in cutting, coloring, and professional hairstyling.',
+            'schedule' => 'Wednesday - Saturday 09:00 - 11:00',
+            'requirements' => 'Professional scissors, hairdryer, straighteners, and styling products.'
+        ],
+        [
+            'id' => 5,
+            'name' => 'Mia',
+            'surname' => 'Davis',
+            'age' => 32,
+            'subject' => 'Massage Therapy',
+            'description' => 'Learn massage therapy techniques for physical and mental well-being.',
+            'schedule' => 'Tuesday - Friday 11:00 - 13:00',
+            'requirements' => 'Essential oils, massage table, towels, and hot stones.'
+        ],
     ];
 
 
@@ -91,6 +137,4 @@ class FrontController extends Controller
     {
         return view('academy', ['academy' => $this->teachers]);
     }
-
-
 }

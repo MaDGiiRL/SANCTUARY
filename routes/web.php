@@ -9,5 +9,3 @@ Route::get('/services', [FrontController::class, 'services'])->name('services');
 
 
 Route::get('/academy', [FrontController::class, 'academy'])->name('academy');
-
-
