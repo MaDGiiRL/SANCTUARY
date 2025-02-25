@@ -74,9 +74,9 @@ class FrontController extends Controller
             'surname' => 'Smith',
             'age' => 30,
             'subject' => 'Makeup Artistry',
-            'description' => 'Learn advanced makeup techniques for various occasions and clients.',
-            'schedule' => 'Monday - Wednesday 10:00 - 12:00',
-            'requirements' => 'Brush set, basic color palette, various shades of foundation.'
+            'description' => 'Learn the art of makeup application for various occasions.',
+            'schedule' => 'Monday and Wednesday, 10 AM - 12 PM',
+            'supplies' => 'Makeup kit, Brushes, Wipes'
         ],
         [
             'id' => 2,
@@ -84,9 +84,9 @@ class FrontController extends Controller
             'surname' => 'Johnson',
             'age' => 28,
             'subject' => 'Skincare',
-            'description' => 'Deepen your knowledge of skincare and the best techniques for aesthetic treatments.',
-            'schedule' => 'Tuesday - Thursday 14:00 - 16:00',
-            'requirements' => 'Facial cleansers, moisturizers, masks, and cleansing tools.'
+            'description' => 'Understand skincare routines and treatments.',
+            'schedule' => 'Tuesday and Thursday, 1 PM - 3 PM',
+            'supplies' => 'Skincare products, Towels, Masks'
         ],
         [
             'id' => 3,
@@ -94,9 +94,9 @@ class FrontController extends Controller
             'surname' => 'Williams',
             'age' => 35,
             'subject' => 'Nail Technology',
-            'description' => 'Become an expert in nail reconstruction and professional nail art.',
-            'schedule' => 'Monday - Friday 16:00 - 18:00',
-            'requirements' => 'Nail files, UV gel, polishes, LED lamp, and decoration tools.'
+            'description' => 'Master nail art and techniques.',
+            'schedule' => 'Friday, 10 AM - 2 PM',
+            'supplies' => 'Nail polish, Tools, Nail art supplies'
         ],
         [
             'id' => 4,
@@ -104,21 +104,12 @@ class FrontController extends Controller
             'surname' => 'Brown',
             'age' => 26,
             'subject' => 'Hair Styling',
-            'description' => 'Gain skills in cutting, coloring, and professional hairstyling.',
-            'schedule' => 'Wednesday - Saturday 09:00 - 11:00',
-            'requirements' => 'Professional scissors, hairdryer, straighteners, and styling products.'
-        ],
-        [
-            'id' => 5,
-            'name' => 'Mia',
-            'surname' => 'Davis',
-            'age' => 32,
-            'subject' => 'Massage Therapy',
-            'description' => 'Learn massage therapy techniques for physical and mental well-being.',
-            'schedule' => 'Tuesday - Friday 11:00 - 13:00',
-            'requirements' => 'Essential oils, massage table, towels, and hot stones.'
+            'description' => 'Learn various hair styling techniques.',
+            'schedule' => 'Saturday, 10 AM - 1 PM',
+            'supplies' => 'Hair products, Tools, Accessories'
         ],
     ];
+    
 
 
     public function home()
@@ -136,5 +127,11 @@ class FrontController extends Controller
     public function academy()
     {
         return view('academy', ['academy' => $this->teachers]);
+    }
+
+    public function show($id)
+    {
+        $teacher = collect($this->teachers)->firstWhere('id', $id);
+        return view('teacher.show', ['teacher' => $teacher]);
     }
 }
