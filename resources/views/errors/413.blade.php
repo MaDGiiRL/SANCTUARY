@@ -1,11 +1,11 @@
-<x-layout title="Error 404">
+<x-layout title="Error 413">
 
     <div id="notfound" class="error-section">
         <div class="notfound">
             <div class="notfound-error">
-                <h1>404 Not Found</h1>
+                <h1>413 URI Too Long</h1>
             </div>
-            <h2>The requested resource does not exist on the server.</h2>
+            <h2>The client sent data that is too large for the server to process.</h2>
             <form class="notfound-search">
                 <input type="text" placeholder="Search...">
                 <button type="button" class="btn btn-dark">Search</button>

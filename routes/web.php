@@ -8,7 +8,7 @@ Route::get('/', [FrontController::class, 'home'])->name('home');
 Route::get('/services', [FrontController::class, 'services'])->name('services');
 
 //controller
-Route::get('/academy', [FrontController::class, 'academy'])->name('academy');
+Route::get('/academ', [FrontController::class, 'academy'])->name('academy');
 //rotta parametrica
 Route::get('/academy/{id}', [FrontController::class, 'show'])->name('teacher-show');
 

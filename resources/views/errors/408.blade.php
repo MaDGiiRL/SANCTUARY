@@ -1,11 +1,11 @@
-<x-layout title="Error 404">
+<x-layout title="Error 408">
 
     <div id="notfound" class="error-section">
         <div class="notfound">
             <div class="notfound-error">
-                <h1>404 Not Found</h1>
+                <h1>408 Request Timeout</h1>
             </div>
-            <h2>The requested resource does not exist on the server.</h2>
+            <h2>The server took too long to respond to the request.</h2>
             <form class="notfound-search">
                 <input type="text" placeholder="Search...">
                 <button type="button" class="btn btn-dark">Search</button>

@@ -88,5 +88,7 @@
             </div>
 
         </div>
+
+        <x-slider/>
     </div>
 </x-layout>
