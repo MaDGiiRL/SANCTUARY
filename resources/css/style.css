@@ -142,6 +142,16 @@ h2 {
     border: 3px solid #3F3F3F;
 }
 
+.img-2{
+background-image: url(/public/media/ee.png);
+background-size: contain;
+background-repeat: no-repeat;
+
+
+
+}
+
+
 /**Second Section**/
 .big-title {
     z-index: 9
@@ -196,6 +206,14 @@ h2 {
     letter-spacing: 5px
 }
 
+.ai-img{
+    background-image: url(/public/media/header-ai.png);
+    background-size: contain;
+    background-position-x: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
 
 /**Academy**/
 h5 {
@@ -339,20 +357,21 @@ h6 {
     background-size: cover;
     background-position: center;
     box-shadow: 0 0 8px #979797;
+    background-attachment: fixed;
 }
 
 
 /* Sticky Form */
 .contact-form {
-    margin-top: 150px;
-    background-image: url(/public/media/3.png);
+    background-image: url(/public/media/10.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 15px #979797;
+    background-attachment: fixed;
 }
-
 
 .form-contact {
     display: flex;

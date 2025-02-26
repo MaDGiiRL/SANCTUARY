@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout title="Teacher">
     <div class="bg-academy">
         <div class="container-fluid pt-5">
             <div class="row pt-5 mt-5 ps-5 pe-5">

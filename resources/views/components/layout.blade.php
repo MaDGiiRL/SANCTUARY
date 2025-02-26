@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>title</title>
+    <title>{{$title ?? "Titolo di Default"}}</title>
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="../../media/logo-ai.png" type="image/x-icon">

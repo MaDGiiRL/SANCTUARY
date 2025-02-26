@@ -1,5 +1,4 @@
-<x-layout>
-
+<x-layout title="Homepage">
     <!-- Main Content with background gradient-->
     <main class="bg-index">
         <!-- Header Index -->
@@ -26,14 +25,16 @@
                 </div>
             </div>
         </div>
+    </main>
 
-        <!-- Second Section -->
-        <div class="container-fluid custom-content-2">
-            <div class="row ps-5">
-                <div class="col-12 col-md-9 text-start big-title pt-5" data-aos="fade-up">
-                    <h2> Every detail is designed to provide you Sanctuary</h2>
-                    <h4 class="display-3">Sanctuary Spa—where beauty meets serenity.</h4>
-                    <div class="row pt-5 mt-5">
+    <!-- Second Section -->
+    <div class="container-fluid custom-content-2">
+        <div class="row ps-5 img-2">
+            <div class="col-12 col-md-12 text-end big-title pt-5" data-aos="fade-up">
+                <h2> Every detail is designed to provide you Sanctuary</h2>
+                <h4 class="display-3">Sanctuary Spa—where beauty meets serenity.</h4>
+                <div class="col-12">
+                    <div class="row">
                         <div class="col-12 col-md-6 pt-5 pe-5">
                             <p class="lead fs-4" data-aos="fade-up">Our team of skilled professionals offers a wide range of services
                                 tailored to meet your
@@ -55,6 +56,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-12 col-md-3 pt-5 ps-5" data-aos="fade-up">
                             <div class="card1 border-0" style="width: 18rem;">
                                 <div class="card-body">
@@ -67,12 +69,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 d-flex justify-content-end m-0 p-0 d-md-block d-none" data-aos="fade-down">
-                    <img src="./media/Light Gradient 7.png" alt="light">
-                </div>
-
             </div>
         </div>
-    </main>
-
+    </div>
 </x-layout>
