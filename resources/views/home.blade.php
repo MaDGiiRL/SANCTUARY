@@ -3,20 +3,22 @@
     <main class="bg-index pt-5">
         <!-- Header Index -->
         <div class="container-fluid pt-5">
-            <div class="row pt-5 ps-5">
+            <div class="row pt-5 ps-md-5 ps-1">
                 <div class="col-12 text-start big-title pt-5" data-aos="fade-up">
                     <h1>
                         Sanctuary
                     </h1>
                 </div>
-                <div class="col-12 col-md-8 abstract-composition d-flex justify-content-end" data-aos="fade-down">
+                <div class="col-11 col-md-8 abstract-composition d-flex justify-content-end" data-aos="fade-down">
                     <img src="/media/abstract-composition-2.png" alt="abstract-composition-2" class="img-fluid">
                 </div>
-                <div class="col-12 col-md-3 text-end" data-aos="fade-down">
+                <div class="col-1 col-md-3 text-end" data-aos="fade-down">
                     <h1 class="big-title2 pb-5">
                         SPA
                     </h1>
-                    <p class="lead fs-3 pt-5">
+                </div>
+                <div class="col-12 col-md-3 text-end" data-aos="fade-down">
+                    <p class="lead fs-3 pt-0 pt-md-5">
                         Welcome to Sanctuary Spa, your ultimate haven for beauty and relaxation. At Sanctuary Spa, we
                         believe that true beauty comes from within, and our mission is to help you discover and enhance
                         your natural radiance.
@@ -28,57 +30,57 @@
     </main>
 
     <!-- slider -->
-    <div class="slider">
-        <div class="slide-track">
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+    <div class="container pt-5 mt-5">
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                </div>
             </div>
         </div>
     </div>
 
-
-
     <!-- Second Section -->
-    <div class="container-fluid custom-content-2 pb-5 mb-5">
+    <div class="container-fluid custom-content-2 pb-5">
         <div class="row ps-5 img-2">
             <div class="col-12 col-md-12 text-end big-title pt-5" data-aos="fade-up">
                 <h2> Every detail is designed to provide you Sanctuary</h2>
@@ -97,7 +99,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-3 pt-5 ps-5" data-aos="fade-down">
+                        <div class="col-12 col-md-3 pt-5 ps-md-5 text-center" data-aos="fade-down">
                             <div class="card1 border-0" style="width: 18rem;">
                                 <div class="card-body">
                                     <img src="./media/Group 7.png" width="50">
@@ -107,7 +109,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-3 pt-5 ps-5" data-aos="fade-up">
+                        <div class="col-12 col-md-3 pt-5 ps-md-5 text-center" data-aos="fade-up">
                             <div class="card1 border-0" style="width: 18rem;">
                                 <div class="card-body">
                                     <img src="./media/Group 7.png" width="50">
@@ -122,7 +124,5 @@
             </div>
         </div>
     </div>
-
-
 
 </x-layout>

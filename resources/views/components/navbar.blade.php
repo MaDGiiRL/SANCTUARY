@@ -10,8 +10,10 @@
                    <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Home</a></li>
                    <li class="nav-item"><a class="nav-link" href="{{route('academy')}}">Academy</a></li>
                    <li class="nav-item"><a class="nav-link" href="{{route('services')}}">Services</a></li>
-                   <li class="nav-item"><a class="nav-link" href="#">Book Now</a></li>
+                   <li class="nav-item"><a class="nav-link" href="{{route('booking')}}">Book Now</a></li>
                </ul>
            </div>
        </div>
    </nav>
+
+   <!-- {{Route::currentRouteName() == 'book-now' ? 'active' : ''}} -->

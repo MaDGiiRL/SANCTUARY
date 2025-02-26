@@ -45,7 +45,7 @@
                 <div class="col-12 pt-5 " data-aos="fade-up-right">
                     <h5>Our Specialist <img src="/media/a1.png" width="70"></h5>
                 </div>
-                <div class="col-12 col-md-3 pb-5" data-aos="flip-left">
+                <div class="col-12 col-md-3 pb-5" data-aos="fade-up" data-aos-delay="100">
                     <div class="card profile-card-1">
                         <img src="/media/tec1.png" alt="profile-image" class="profile" />
                         <div class="card-content">
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 pb-5" data-aos="flip-right">
+                <div class="col-12 col-md-3 pb-5" data-aos="fade-up" data-aos-delay="200">
                     <div class="card profile-card-1">
                         <img src="/media/tec2.png" alt="profile-image" class="profile" />
                         <div class="card-content">
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 pb-5" data-aos="flip-left">
+                <div class="col-12 col-md-3 pb-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="card profile-card-1">
                         <img src="/media/tec3.png" alt="profile-image" class="profile" />
                         <div class="card-content">
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 pb-5" data-aos="flip-right">
+                <div class="col-12 col-md-3 pb-5" data-aos="fade-up" data-aos-delay="400">
                     <div class="card profile-card-1">
                         <img src="/media/tec4.png" alt="profile-image" class="profile" />
                         <div class="card-content">

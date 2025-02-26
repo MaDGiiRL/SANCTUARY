@@ -11,3 +11,8 @@ Route::get('/services', [FrontController::class, 'services'])->name('services');
 Route::get('/academy', [FrontController::class, 'academy'])->name('academy');
 //rotta parametrica
 Route::get('/academy/{id}', [FrontController::class, 'show'])->name('academy.show');
+
+//form lato utente
+Route::get('/booking', [FrontController::class, 'booking'])->name('booking');
+//form lato server
+Route::post('/form', [FrontController::class, 'submit'])->name('submit');

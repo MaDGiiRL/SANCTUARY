@@ -126,7 +126,7 @@ class FrontController extends Controller
         ],
     ];
 
-    
+
     public function home()
     {
         return view('home');
@@ -138,7 +138,7 @@ class FrontController extends Controller
         return view('services', ['services' => $this->services]);
     }
 
-
+    /// controller e rotta parametrica 
     public function academy()
     {
         return view('academy', ['teachers' => $this->teachers]);
@@ -147,8 +147,30 @@ class FrontController extends Controller
     public function show($id)
     {
         $teacher = collect($this->teachers)->firstWhere('id', $id);
-        return view('teacher-show', ['teacher' => $teacher]);
+        return view('teacher.show', ['teacher' => $teacher]);
     }
 
 
+    //form 
+    public function booking()
+    {
+        return view('booking');
+    }
+
+    public function submit(Request $request)
+    {
+        // $name = $request->input('name');
+        // $email = $request->input('email');
+        // $tel = $request->input('tel');
+        // $user_message = $request->input('user_message');
+        // semplificato
+        $name = $request->name;
+        $email = $request->email;
+        $tel = $request->tel;
+        $user_message = $request->user_message;
+
+
+        //vedere i valori con dd()
+        dd($name, $email, $tel, $user_message);
+    }
 }

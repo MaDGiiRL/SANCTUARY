@@ -142,10 +142,10 @@ h2 {
     border: 3px solid #3F3F3F;
 }
 
-.img-2{
-background-image: url(/public/media/ee.png);
-background-size: contain;
-background-repeat: no-repeat;
+.img-2 {
+    background-image: url(/public/media/ee.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 
 
 
@@ -206,18 +206,18 @@ background-repeat: no-repeat;
     letter-spacing: 5px
 }
 
-.ai-img{
+.ai-img {
     background-image: url(/public/media/header-ai.png);
     background-size: contain;
-
     background-repeat: no-repeat;
     background-attachment: fixed;
 
 }
 
-.padding-start{
+.padding-start {
     padding-left: 250px
 }
+
 /**Academy**/
 h5 {
     color: #3F3F3F;
@@ -355,7 +355,7 @@ h6 {
 
 
 /**Card Classes**/
-.bg-pink{
+.bg-pink {
     background-image: url(/public/media/Light\ Gradient\ 06.png);
     background-size: cover;
     background-position: center;
@@ -417,24 +417,46 @@ h6 {
         font-size: 60px;
         text-transform: uppercase;
     }
-    
+
     h2 {
         color: #3F3F3F;
         font-size: 40px;
         text-transform: uppercase;
     }
-   
+
     h5 {
         color: #3F3F3F;
         font-size: 60px;
         text-transform: uppercase;
         z-index: 9;
     }
-    
-    .abstract-composition{
+
+    .abstract-composition {
         padding-top: 100px
     }
 
-    
 
+    .padding-start {
+        padding-left: 0px
+    }
+
+    .ai-img {
+        background-size: cover;
+    }
+
+    .contact-form {
+        background-position: left;
+    }
+
+    .abstract-composition img {
+        position: relative;
+        top: 50px;
+    }
+
+    .big-title2 {
+     position: relative;
+     left: -100px
+
+
+    }
 }
