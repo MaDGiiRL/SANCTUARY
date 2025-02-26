@@ -12,13 +12,13 @@
                 <div class="col-11 col-md-8 abstract-composition d-flex justify-content-end" data-aos="fade-down">
                     <img src="/media/abstract-composition-2.png" alt="abstract-composition-2" class="img-fluid">
                 </div>
-                <div class="col-1 col-md-3 text-end" data-aos="fade-down">
+                <div class="col-1 text-end pb-5" data-aos="fade-down">
                     <h1 class="big-title2 pb-5">
                         SPA
                     </h1>
                 </div>
-                <div class="col-12 col-md-3 text-end" data-aos="fade-down">
-                    <p class="lead fs-3 pt-0 pt-md-5">
+                <div class="col-12 col-md-3 col-lg-3 text-end mt-lg-5 mt-md-5 pt-lg-5 pt-md-5" data-aos="fade-down">
+                    <p class="lead fs-3 pt-0 pt-md-5 pt-lg-5 mt-md-5 mt-lg-5">
                         Welcome to Sanctuary Spa, your ultimate haven for beauty and relaxation. At Sanctuary Spa, we
                         believe that true beauty comes from within, and our mission is to help you discover and enhance
                         your natural radiance.
