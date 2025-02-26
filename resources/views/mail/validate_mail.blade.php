@@ -1,29 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanctuary Spa</title>
-</head>
-
-<body>
-    <h1>Grazie per averci contattato</h1>
-    <h2>Risponderemo il prima possibile</h2>
-    <p>Se non hai richiesto un contatto ignora questa mail.</p>
-
-    faccio visualizzare $user_data dell'utente che ha fatto richiesta con cui ho lavorato in ContactMail e FrontController 
-    <p>Ecco un riepilogo dei tuoi dati:</p>
-    <ul>
-        <li>Nome e Cognome: {{$user_data['name']}}</li> 
-        <li>La tua Mail: {{$user_data['email']}}</li>
-        <li>Il tuo telefono: {{$user_data['tel']}}</li>
-        <li>Il tuo messaggio: {{$user_data['user_message']}}</li>
-    </ul>
-</body>
-
-</html> -->
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
  <head>
@@ -151,7 +125,7 @@ a[x-apple-data-detectors],
                   <td align="center" valign="top" style="padding:0;Margin:0;width:600px">
                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                      <tr>
-                      <td align="center" style="padding:0;Margin:0;font-size:0"><img width="600" src="https://etnnxbr.stripocdn.email/content/guids/CABINET_31565377a63d1a8f79fb7b2abae4482279aa2b804e88d698e8cddf35771ba108/images/blue_pink_gradient_make_up_class_facebook_post.png" alt="" class="adapt-img" style="display:block;font-size:14px;border:0;outline:none;text-decoration:none"></td>
+                      <td align="center" style="padding:0;Margin:0;font-size:0"><img src="https://etnnxbr.stripocdn.email/content/guids/CABINET_31565377a63d1a8f79fb7b2abae4482279aa2b804e88d698e8cddf35771ba108/images/blue_pink_gradient_make_up_class_facebook_post_1.png" alt="" width="600" class="adapt-img" style="display:block;font-size:14px;border:0;outline:none;text-decoration:none"></td>
                      </tr>
                    </table></td>
                  </tr>
@@ -253,14 +227,14 @@ a[x-apple-data-detectors],
           <td align="center" style="padding:0;Margin:0">
            <table bgcolor="#ffffff" align="center" cellpadding="0" cellspacing="0" class="es-footer-body" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FF90B3;width:600px">
              <tr>
-              <td align="left" background="https://etnnxbr.stripocdn.email/content/guids/CABINET_31565377a63d1a8f79fb7b2abae4482279aa2b804e88d698e8cddf35771ba108/images/blue_pink_gradient_make_up_class_facebook_post_2.png" style="Margin:0;padding-right:20px;padding-left:20px;padding-top:40px;padding-bottom:40px;background-image:url(https://etnnxbr.stripocdn.email/content/guids/CABINET_31565377a63d1a8f79fb7b2abae4482279aa2b804e88d698e8cddf35771ba108/images/blue_pink_gradient_make_up_class_facebook_post_2.png);background-repeat:no-repeat;background-position:left top;background-size:cover"><!--[if mso]><table style="width:560px" cellpadding="0" 
+              <td align="left" background="https://etnnxbr.stripocdn.email/content/guids/CABINET_31565377a63d1a8f79fb7b2abae4482279aa2b804e88d698e8cddf35771ba108/images/blue_pink_gradient_make_up_class_facebook_post_2.png" style="Margin:0;padding-right:20px;padding-left:20px;padding-top:40px;padding-bottom:40px;background-image:url(https://etnnxbr.stripocdn.email/content/guids/CABINET_31565377a63d1a8f79fb7b2abae4482279aa2b804e88d698e8cddf35771ba108/images/blue_pink_gradient_make_up_class_facebook_post_2.png);background-repeat:no-repeat;background-position:left top"><!--[if mso]><table style="width:560px" cellpadding="0" 
                         cellspacing="0"><tr><td style="width:270px" valign="top"><![endif]-->
                <table cellpadding="0" cellspacing="0" align="left" class="es-left" role="none" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
                  <tr>
                   <td align="left" class="es-m-p20b" style="padding:0;Margin:0;width:270px">
                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                      <tr>
-                      <td align="left" style="padding:0;Margin:0"><h3 class="es-m-txt-l" style="Margin:0;font-family:'Krona One', sans-serif;mso-line-height-rule:exactly;letter-spacing:0;font-size:20px;font-style:normal;font-weight:normal;line-height:24px;color:#333333">OPENING HOURS</h3><p class="es-m-txt-l" style="Margin:0;mso-line-height-rule:exactly;font-family:Kanit, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px"><br></p><p class="es-m-txt-l" style="Margin:0;mso-line-height-rule:exactly;font-family:Kanit, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">Mon - Fri: 8AM - 10PM<br>Sat: 9AM-8PM<br>Sun: Closed<br>National Holidays: Closed</p></td>
+                      <td align="left" style="padding:0;Margin:0"><h3 class="es-m-txt-l" style="Margin:0;font-family:'Krona One', sans-serif;mso-line-height-rule:exactly;letter-spacing:0;font-size:20px;font-style:normal;font-weight:normal;line-height:24px;color:#333333">APPOINTMENT DATA</h3><p class="es-m-txt-l" style="Margin:0;mso-line-height-rule:exactly;font-family:Kanit, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px"><br></p><p class="es-m-txt-l" style="Margin:0;mso-line-height-rule:exactly;font-family:Kanit, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">{{$user_data['name']}}</p><p class="es-m-txt-l" style="Margin:0;mso-line-height-rule:exactly;font-family:Kanit, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">{{$user_data['phone']}}</p><p class="es-m-txt-l" style="Margin:0;mso-line-height-rule:exactly;font-family:Kanit, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">{{$user_data['email']}}</p><p class="es-m-txt-l" style="Margin:0;mso-line-height-rule:exactly;font-family:Kanit, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">{{$user_data['mess']}}</p><p class="es-m-txt-l" style="Margin:0;mso-line-height-rule:exactly;font-family:Kanit, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">{{$user_data['date']}}</p><p class="es-m-txt-l" style="Margin:0;mso-line-height-rule:exactly;font-family:Kanit, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">{{$user_data['time']}}</p></td>
                      </tr>
                    </table></td>
                  </tr>
@@ -297,3 +271,4 @@ a[x-apple-data-detectors],
   </div>
  </body>
 </html>
+

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Exception;
+use App\Mail\BookChecked;
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -220,7 +221,7 @@ class FrontController extends Controller
 
         try {
             // Invio dell'email
-            Mail::to($email)->send(new ContactMail($user_data));
+            Mail::to($email)->send(new BookChecked($user_data));
         } catch (Exception $error) {
             return redirect(route('denied'))->with('emailError', 'Please try again.');
         }
