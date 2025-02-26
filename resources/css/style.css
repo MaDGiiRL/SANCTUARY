@@ -183,7 +183,7 @@ background-repeat: no-repeat;
     border: 3px solid #3F3F3F;
 }
 
-.services-card {
+.services-card img {
     cursor: pointer;
     box-shadow: 0 0 8px #979797;
     opacity: 0.6;
@@ -209,12 +209,15 @@ background-repeat: no-repeat;
 .ai-img{
     background-image: url(/public/media/header-ai.png);
     background-size: contain;
-    background-position-x: 700px;
+
     background-repeat: no-repeat;
     background-attachment: fixed;
 
 }
 
+.padding-start{
+    padding-left: 250px
+}
 /**Academy**/
 h5 {
     color: #3F3F3F;

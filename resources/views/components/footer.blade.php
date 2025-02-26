@@ -1,8 +1,9 @@
    <!-- footer -->
+
    <footer class="container bg-grey pt-5 mt-5 pb-5" data-aos="zoom-in">
        <div class="row  pt-5 align-items-center justify-content-center">
            <div class="col-12 col-md-6">
-               <div class="row">
+               <div class="row pt-5">
                    <div class="col-12 col-md-6 ">
                        <div class="logo-part">
                            <img src="/media/logo.png" class="w-50 logo-footer">
@@ -61,7 +62,4 @@
                </div>
            </div>
        </div>
-
-
-
    </footer>

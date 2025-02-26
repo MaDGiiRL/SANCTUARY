@@ -1,9 +1,9 @@
 <x-layout title="Services">
 
     <!-- cards services -->
-    <div class="container-fluid pt-5 bg-pink ">
-        <div class="container">
-            <div class="row ai-img">
+    <div class="container-fluid pt-5 ai-img ps-5">
+        <div class="container padding-start">
+            <div class="row ps-5">
                 <div class="col-12 pt-5 pb-5">
                     <h2><img src="/media/a1.png" width="100"> Services</h2>
                     <p class="lead-services">By booking an appointment at Sanctuary Spa, you acknowledge and agree to these <a href="#">terms and conditions</a>. Thank you for choosing us for your beauty and wellness needs!</p>
@@ -16,7 +16,7 @@
 
                 <!-- card generate dinamicamente -->
                 @foreach($services as $service)
-                <div class="col-12 col-md-6 pb-5" data-aos="{{$loop->first ? 'zoom-out-up' : 'zoom-out-down'}}">
+                <div class="col-12 col-md-5 pb-5" data-aos="{{$loop->first ? 'zoom-out-up' : 'zoom-out-down'}}">
                     <!-- card componenets -->
                     <x-card
                         title="{{$service['name']}}"
@@ -27,9 +27,7 @@
                 @endforeach
             </div>
         </div>
-    </div>
 
-    <!-- form -->
-    <x-form />
+    </div>
 
 </x-layout>
