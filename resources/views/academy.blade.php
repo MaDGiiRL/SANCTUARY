@@ -30,7 +30,7 @@
                             <div class="card-body">
                                 <h5 class="card-title fs-1">{{ $teacher['subject'] }}</h5>
                                 <p class="card-text fs-5">{{ $teacher['class-desc'] }}</p>
-                                <a href="{{ route('academy.show', $teacher['id']) }}" class="btn btn-dark fs-5">Dettagli</a>
+                                <a href="{{ route('teacher-show', $teacher['id']) }}" class="btn btn-dark fs-5">Dettagli</a>
                             </div>
                         </div>
                     </div>

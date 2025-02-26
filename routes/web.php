@@ -10,7 +10,7 @@ Route::get('/services', [FrontController::class, 'services'])->name('services');
 //controller
 Route::get('/academy', [FrontController::class, 'academy'])->name('academy');
 //rotta parametrica
-Route::get('/academy/{id}', [FrontController::class, 'show'])->name('academy.show');
+Route::get('/academy/{id}', [FrontController::class, 'show'])->name('teacher-show');
 
 //form lato utente
 Route::get('/booking', [FrontController::class, 'booking'])->name('booking');

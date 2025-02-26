@@ -150,7 +150,7 @@ class FrontController extends Controller
     public function show($id)
     {
         $teacher = collect($this->teachers)->firstWhere('id', $id);
-        return view('teacher.show', ['teacher' => $teacher]);
+        return view('teacher-show', ['teacher' => $teacher]);
     }
 
 
@@ -181,7 +181,7 @@ class FrontController extends Controller
         //Infine passo a ContactMail $user_data così che venga visualizzato nella construct in FrontController
         // Mail::to($email)->send(new ContactMail($user_data));
         // per perfezionare uso try and catch in caso di server mail down
-        try { 
+        try {
             Mail::to($email)->send(new ContactMail($user_data));
         } catch (Exception $error) {
             // return redirect()->back()->with('emailError', 'Your message has not been sent');

@@ -1,9 +1,5 @@
 <x-layout title="Book Now">
 
-
-
-
-
     <x-form />
 
     <!-- messaggio invio form -->

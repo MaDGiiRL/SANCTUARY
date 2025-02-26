@@ -1,6 +1,6 @@
    <!-- footer -->
 
-   <footer class="container bg-grey pt-5 mt-5 pb-5" data-aos="zoom-in">
+   <footer class="container-fluid bg-grey pt-5 mt-5 pb-5" data-aos="zoom-in">
        <div class="row  pt-5 align-items-center justify-content-center">
            <div class="col-12 col-md-6">
                <div class="row pt-5">
