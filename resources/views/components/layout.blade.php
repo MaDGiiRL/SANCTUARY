@@ -8,7 +8,7 @@
     <title>{{$title ?? "Titolo di Default"}}</title>
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="../../media/logo-ai.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/media/favicon.png" type="image/x-icon">
 
     <!-- CDN Fontawesome -->
     <script src="https://kit.fontawesome.com/e3f2c77b28.js" crossorigin="anonymous"></script>

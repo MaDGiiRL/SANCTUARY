@@ -16,18 +16,20 @@
 
                 <!-- card generate dinamicamente -->
                 @foreach($services as $service)
-                <div class="col-12 col-md-5 pb-5" data-aos="{{$loop->first ? 'zoom-out-up' : 'zoom-out-down'}}">
+                <div class="col-12 col-md-3 pb-5" data-aos="{{$loop->first ? 'zoom-out-up' : 'zoom-out-down'}}">
                     <!-- card componenets -->
                     <x-card
                         title="{{$service['name']}}"
-                        description="{{$service['description']}}"
-                        target="{{$service['target']}}"
-                        image="{{$service['image']}}" />
+                        image="{{$service['image']}}" 
+                        button="{{ route('price-show', ['id' => $service['id']]) }}"
+                        />
                 </div>
                 @endforeach
             </div>
         </div>
 
     </div>
+
+    <x-slider />
 
 </x-layout>

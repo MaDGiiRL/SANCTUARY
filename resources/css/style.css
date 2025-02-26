@@ -146,9 +146,6 @@ h2 {
     background-image: url(/public/media/ee.png);
     background-size: contain;
     background-repeat: no-repeat;
-
-
-
 }
 
 
@@ -183,16 +180,9 @@ h2 {
     border: 3px solid #3F3F3F;
 }
 
-.services-card img {
-    cursor: pointer;
-    box-shadow: 0 0 8px #979797;
-    opacity: 0.6;
-    transition: all 2s;
-}
-
-.services-card:hover {
-    opacity: 1;
-    box-shadow: 0 0 15px #979797;
+.services-card{
+    background-image: url(/public/media/Light\ Gradient\ 06.png);
+    background-size: cover
 }
 
 .card h3,
@@ -203,7 +193,7 @@ h2 {
 
 .card h3:hover,
 .card h5:hover {
-    letter-spacing: 5px
+    letter-spacing: 1px
 }
 
 .ai-img {
@@ -255,6 +245,10 @@ h6 {
 
 .card {
     box-shadow: 0 0 8px #979797;
+}
+
+.card-title-1{
+    font-size: 18px
 }
 
 /*Teachers Card 1*/
@@ -371,6 +365,7 @@ h6 {
     background-repeat: no-repeat;
     background-position: center;
     padding: 40px;
+    margin-bottom: 50px;
     border-radius: 8px;
     box-shadow: 0 0 15px #979797;
     background-attachment: fixed;
@@ -488,9 +483,7 @@ h6 {
 
 
 
-/* Error 404 */
-
-
+/* Errors Pages */
 
 .error-section {
     padding: 0;
@@ -605,6 +598,126 @@ h6 {
     }
 
     .notfound .notfound-error h1 {
+        font-size: 122px;
+    }
+}
+
+
+
+/* Confirmed and Denied Pages */
+
+.confirmed-section {
+    padding: 0;
+    margin: 0;
+    background-image: url(/public/media/Light\ Gradient\ 06.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%
+}
+
+#confirmed {
+    position: relative;
+    height: 100vh;
+}
+
+#confirmed .confirmed {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.confirmed {
+    width: 100%;
+    text-align: center;
+    padding: 0px 15px;
+    line-height: 1.4;
+}
+
+.confirmed .confirmed-error {
+    height: 200px;
+    line-height: 200px;
+}
+
+.confirmed .confirmed-error h1 {
+    font-size: 160px;
+    color: #373737;
+    text-transform: uppercase;
+}
+
+.confirmed h2 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222;
+    margin: 0;
+}
+
+.confirmed-search {
+    position: relative;
+    padding-right: 123px;
+    max-width: 420px;
+    width: 100%;
+    margin: 30px auto 22px;
+}
+
+.confirmed-search input {
+    width: 100%;
+    height: 40px;
+    padding: 3px 15px;
+    color: #222;
+    font-size: 18px;
+    background: #f8fafb;
+    border: 1px solid rgba(34, 34, 34, 0.2);
+    border-radius: 3px;
+}
+
+.confirmed-search button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.confirmed a {
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.confirmed a>.arrow {
+    position: relative;
+    top: -2px;
+    border: solid #373737;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+@media only screen and (max-width: 767px) {
+    .confirmed .confirmed-error {
+        height: 122px;
+        line-height: 122px;
+    }
+
+    .confirmed .confirmed-error h1 {
         font-size: 122px;
     }
 }

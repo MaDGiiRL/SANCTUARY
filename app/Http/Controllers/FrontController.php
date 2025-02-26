@@ -13,61 +13,66 @@ class FrontController extends Controller
     public $services = [
         [
             "id" => 1,
-            "name" => "Rejuvenating Facial",
-            "description" => "A revitalizing facial treatment designed to cleanse, exfoliate, and hydrate the skin, leaving it glowing and refreshed.",
-            "target" => "Individuals seeking to improve skin appearance and hydration.",
-            "image" => "/media/services/Rejuvenating Facial.png",
+            "name" => "Nails and Feet",
+            "image" => "/media/services/1.jpg",
         ],
         [
             "id" => 2,
-            "name" => "Deep Tissue Massage",
-            "description" => "A therapeutic massage that targets deeper layers of muscle and connective tissue to relieve chronic pain and tension.",
-            "target" => "Those with muscle soreness or chronic pain issues.",
-            "image" => "/media/services/Deep Tissue Massage.png",
+            "name" => "Facial Treatment",
+            "image" => "/media/services/2.jpg",
         ],
         [
             "id" => 3,
-            "name" => "Aromatherapy Massage",
-            "description" => "A relaxing massage infused with essential oils to promote relaxation and emotional well-being.",
-            "target" => "Anyone looking for stress relief and relaxation.",
-            "image" => "/media/services/Aromatherapy Massage.png",
+            "name" => "Body Treatment",
+            "image" => "/media/services/3.jpg",
         ],
         [
             "id" => 4,
-            "name" => "Hydrating Body Wrap",
-            "description" => "A luxurious treatment that deeply hydrates the skin using nourishing ingredients to leave it soft and supple.",
-            "target" => "Individuals with dry or dehydrated skin.",
-            "image" => "/media/services/Hydrating Body Wrap.png",
+            "name" => "Epilation",
+            "image" => "/media/services/4.jpg",
         ],
         [
             "id" => 5,
-            "name" => "Exfoliating Scrub",
-            "description" => "A body scrub that exfoliates dead skin cells, revealing smoother, brighter skin underneath.",
-            "target" => "Those wanting to rejuvenate their skin and improve texture.",
-            "image" => "/media/services/Exfoliating Scrub.png",
+            "name" => "Laser",
+            "image" => "/media/services/5.jpg",
         ],
         [
             "id" => 6,
-            "name" => "Brazilian Waxing",
-            "description" => "A professional waxing service that removes unwanted hair for smooth, long-lasting results.",
-            "target" => "Individuals seeking a clean and hair-free bikini area.",
-            "image" => "/media/services/Brazilian Waxing.png",
+            "name" => "Solarium",
+            "image" => "/media/services/6.jpg",
         ],
         [
             "id" => 7,
-            "name" => "Chemical Peel",
-            "description" => "Treatment that uses chemical solutions to exfoliate and improve the texture of the skin, reducing fine lines and blemishes.",
-            "target" => "Those looking to address skin imperfections and signs of aging.",
-            "image" => "/media/services/Chemical Peel.png",
+            "name" => "Piercings",
+            "image" => "/media/services/7.jpg",
         ],
         [
             "id" => 8,
-            "name" => "Microdermabrasion",
-            "description" => "A non-invasive procedure that exfoliates the skin using fine crystals, promoting cell turnover and revealing a fresh complexion.",
-            "target" => "Individuals wanting to enhance skin texture and clarity.",
-            "image" => "/media/services/Microdermabrasion.png",
+            "name" => "Brows and Lashes",
+            "image" => "/media/services/8.jpg",
+        ],
+        [
+            "id" => 9,
+            "name" => "Make-Up",
+            "image" => "/media/services/9.jpg",
+        ],
+        [
+            "id" => 10,
+            "name" => "Hair",
+            "image" => "/media/services/10.jpg",
+        ],
+        [
+            "id" => 11,
+            "name" => "PMU",
+            "image" => "/media/services/11.jpg",
+        ],
+        [
+            "id" => 12,
+            "name" => "Daily Total",
+            "image" => "/media/services/12.jpg",
         ]
     ];
+
 
 
     public $teachers = [
@@ -135,11 +140,18 @@ class FrontController extends Controller
         return view('home');
     }
 
-
+    /// controller e rotta parametrica 
     public function services()
     {
         return view('services', ['services' => $this->services]);
     }
+
+    public function price($id)
+    {
+        $service = collect($this->services)->firstWhere('id', $id);
+        return view('price-show', ['service' => $service]);
+    }
+
 
     /// controller e rotta parametrica 
     public function academy()
@@ -185,11 +197,46 @@ class FrontController extends Controller
             Mail::to($email)->send(new ContactMail($user_data));
         } catch (Exception $error) {
             // return redirect()->back()->with('emailError', 'Your message has not been sent');
-            return redirect(route('booking'))->with('emailError', 'Your message has not been sent. Please try again.');
+            return redirect(route('denied'))->with('emailError', 'Please try again.');
         }
 
         //redirecting dell'utente
-        return redirect(route('booking'))->with('status', 'Your message has been sent');
+        return redirect(route('confirmed'))->with('status', 'Message sent');
         //posso concatenare il metodo with per fare un pop-up nella sessione
+    }
+
+
+    public function submit2(Request $request)
+    {
+        $name = $request->name;
+        $phone = $request->phone;
+        $email = $request->email;
+        $mess = $request->mess;
+        $date = $request->date;
+        $time = $request->time;
+
+        // Compattazione dei dati dell'utente
+        $user_data = compact('name', 'phone', 'email', 'mess', 'date', 'time');
+
+        try {
+            // Invio dell'email
+            Mail::to($email)->send(new ContactMail($user_data));
+        } catch (Exception $error) {
+            return redirect(route('denied'))->with('emailError', 'Please try again.');
+        }
+
+        // Redirecting dell'utente
+        return redirect(route('confirmed'))->with('status', 'Message sent');
+    }
+
+
+    public function confirmed()
+    {
+        return view('confirmed');
+    }
+
+    public function denied()
+    {
+        return view('denied');
     }
 }

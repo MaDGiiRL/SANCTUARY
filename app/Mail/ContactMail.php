@@ -25,7 +25,7 @@ class ContactMail extends Mailable
     {
         //nell'oggetto che andrò a creare prendi questo attributo e valorizzalo con
         // argomento reale in posizione user-data
-        $this->user_data= $user_data;
+        $this->user_data = $user_data;
     }
 
     /**

@@ -1,4 +1,4 @@
-<x-layout  title="Academy">
+<x-layout title="Academy">
     <div class="bg-academy">
         <!-- header -->
         <div class="container pt-5">
@@ -13,9 +13,7 @@
                 <div class="col-12 col-md-3 abstract-academy d-md-block d-none" data-aos="fade-left">
                     <img src="/media/absract4.png" width="500">
                 </div>
-                <div class="col-12 text-center pb-5" data-aos="fade-down-right">
-                    <h5>Next course starting on <em>September 2025</em></h5>
-                </div>
+                <x-next />
             </div>
         </div>
 
@@ -39,56 +37,10 @@
             </div>
         </div>
 
-        <!-- teachers -->
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-12 pt-5 " data-aos="fade-up-right">
-                    <h5>Our Specialist <img src="/media/a1.png" width="70"></h5>
-                </div>
-                <div class="col-12 col-md-3 pb-5" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card profile-card-1">
-                        <img src="/media/tec1.png" alt="profile-image" class="profile" />
-                        <div class="card-content">
-                            <h2>Sophia Smith<small>Make-up Artist</small></h3>
-                                <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3 pb-5" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card profile-card-1">
-                        <img src="/media/tec2.png" alt="profile-image" class="profile" />
-                        <div class="card-content">
-                            <h2>Olivia Johnson<small>Skin Care Specialist</small></h2>
-                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3 pb-5" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card profile-card-1">
-                        <img src="/media/tec3.png" alt="profile-image" class="profile" />
-                        <div class="card-content">
-                            <h2>Emma Williams<small>Onicothecnician</small></h2>
-                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3 pb-5" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card profile-card-1">
-                        <img src="/media/tec4.png" alt="profile-image" class="profile" />
-                        <div class="card-content">
-                            <h2>Ava Brown<small>Hairdresser</small></h2>
-                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <x-staff />
 
-        </div>
+        <x-slider />
 
-        <x-slider/>
     </div>
+
 </x-layout>

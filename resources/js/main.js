@@ -7,16 +7,6 @@ AOS.init({
     once: true
 });
 
-// Form
-document.querySelector('form').addEventListener('submit', function (e) {
-    let nome = document.getElementById('nome').value;
-    let email = document.getElementById('email').value;
-
-    if (nome.trim() === '' || email.trim() === '') {
-        e.preventDefault();
-        alert('Per favore, compila tutti i campi richiesti.');
-    }
-});
 
 // navbar allo scroll
 window.addEventListener('scroll', function () {
