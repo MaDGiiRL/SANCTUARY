@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Exception;
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class FrontController extends Controller
 {
@@ -159,6 +162,10 @@ class FrontController extends Controller
 
     public function submit(Request $request)
     {
+        //per testare se ha preso i valori con dd()
+        // dd($name, $email, $tel, $user_message);
+
+
         // $name = $request->input('name');
         // $email = $request->input('email');
         // $tel = $request->input('tel');
@@ -169,8 +176,20 @@ class FrontController extends Controller
         $tel = $request->tel;
         $user_message = $request->user_message;
 
+        //compatto i dati dell'utente che ha fatto richiesta in una variabile
+        $user_data = compact('name', 'email', 'tel', 'user_message');
+        //Infine passo a ContactMail $user_data così che venga visualizzato nella construct in FrontController
+        // Mail::to($email)->send(new ContactMail($user_data));
+        // per perfezionare uso try and catch in caso di server mail down
+        try { 
+            Mail::to($email)->send(new ContactMail($user_data));
+        } catch (Exception $error) {
+            // return redirect()->back()->with('emailError', 'Your message has not been sent');
+            return redirect(route('booking'))->with('emailError', 'Your message has not been sent. Please try again.');
+        }
 
-        //vedere i valori con dd()
-        dd($name, $email, $tel, $user_message);
+        //redirecting dell'utente
+        return redirect(route('booking'))->with('status', 'Your message has been sent');
+        //posso concatenare il metodo with per fare un pop-up nella sessione
     }
 }

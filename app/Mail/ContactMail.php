@@ -3,22 +3,29 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
 class ContactMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    //creo attributo pubblico di chi ha inviato la richiesta
+    public $user_data;
+
+
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($user_data)
     {
-        //
+        //nell'oggetto che andrò a creare prendi questo attributo e valorizzalo con
+        // argomento reale in posizione user-data
+        $this->user_data= $user_data;
     }
 
     /**
@@ -27,7 +34,8 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Contact Mail',
+            from: new Address('no-reply@aulab.it', 'No-Reply'),
+            subject: 'Thank You!',
         );
     }
 
@@ -37,7 +45,7 @@ class ContactMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'mail.contact_mail',
         );
     }
 
